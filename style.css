@@ -1,0 +1,92 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+* a, * a:visited, * a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+* .f_left{
+    float:left;
+}
+* .f_right{
+    float:right;
+}
+
+header{
+    width:100vw;
+    height:50px;
+    background-color: yellow;
+}
+
+.header_content, .header-subcontent{
+    background-color: lightgreen;
+    width:80%;
+    height:100%;
+    margin:0 auto;
+}
+
+.logo-img, .dumpheader{
+    width:160px;
+    height:40px;
+}
+
+.header-index, .subheader{
+    float:left;
+    padding:5px 20px;
+}
+
+.subheader{
+    display:inline-block;
+}
+
+.header-index a{
+    font-size: 20px;
+    font-weight: 400;
+    color:rgba(146,129,205,0.7);
+}
+
+.header-index a:visited{
+    font-size: 20px;
+    font-weight: 400;
+    color:rgba(146,129,205,0.7);
+}
+
+.header-index a:hover{
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.header-left{
+    float:left;
+}
+
+.header-right, .header-login{
+    float:right;
+}
+
+.index-background{
+    width:90vw;
+    height:300px;
+}
+
+.index-content{
+    width:90vw;
+    background-color: lightblue;
+    margin:0 auto;
+    text-align: center;
+}
+
+.index-top{
+    background-color: lightgreen;
+}
+
+.index-content-box{
+    width:95%;
+    height:500px;
+    margin: 100px auto;
+    border:1px solid #060606;
+    border-radius: 30px;
+}
