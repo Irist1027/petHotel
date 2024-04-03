@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <jsp:include src="header.jsp">
+    <jsp:include page="header.jsp" />
     <form name=loginfrm method=post>
         <table class=login_tbl>
             <tr>

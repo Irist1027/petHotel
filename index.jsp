@@ -7,19 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <div class=header_content>
-        <span class="header-index">
-            <a href="index.jsp"><img src=img/logo.svg alt=logo class=logo-img></a>
-        </span>
-            <div class="header-index"><a href="#">호텔정보</a></div>
-            <div class="header-index"><a href="#">예약하기</a></div>
-            <div class="header-index"><a href="#">회원정보</a></div>
-            <div class="header-index"><a href="#">커뮤니티</a></div>
-            <div class="header-index"><a href="#"><span class="login">로그인</span> </a></div>
-        </ul>
-        </div>
-    </header>
+    <jsp:include page=header.jsp />
     <div class="index-background">
         <div class="pic_arrow f_left"><</div>
         <div class="index-bgPicture">
@@ -36,22 +24,24 @@
             content1
         </div>
 
-        <div class="index-content-box index-2nd">
+        <div class="index-2nd index-content-box">
             <div class="index-2nd-content">
                 <div class="index-2nd-content-text">
-                    content2
-                <div>
+                    
+                </div>
             </div>
+            content2
         </div>
 
-        
         <div class="index-content-box index-3rd">
             <div class="index-3rd-content">
                 <div class="index-3rd-content-text">
-                    content3
+                    
                 <div>
             </div>
+            content3
         </div>
+        
     </div>
     <footer>
         

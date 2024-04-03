@@ -63,6 +63,7 @@ header{
     float:left;
 }
 
+
 .header-right, .header-login{
     float:right;
 }
@@ -79,14 +80,27 @@ header{
     text-align: center;
 }
 
-.index-top{
-    background-color: lightgreen;
-}
-
 .index-content-box{
     width:95%;
     height:500px;
     margin: 100px auto;
     border:1px solid #060606;
     border-radius: 30px;
+}
+
+.index-top{
+    background-color: lightgreen;
+}
+
+.index-2nd{
+    background-color: lightgray;
+}
+
+.index-3rd{
+    background-color: yellow;
+}
+
+.login_box{
+    border: 1px solid black;
+    border-radius: 15px;
 }
