@@ -12,7 +12,7 @@
             <div class="header-index"><a href="#">예약하기</a></div>
             <div class="header-index"><a href="#">회원정보</a></div>
             <div class="header-index"><a href="#">커뮤니티</a></div>
-            <div class="header-index"><a href="#"><span class="login">로그인</span> </a></div>
+            <div class="header-index"><a href="login.jsp"><span class="login">로그인</span> </a></div>
         </ul>
         </div>
     </header>

@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
-<body>
-    <jsp:include page="header.jsp" />
+<body class=login_page>
+    <div class=login_title>
+        <a href=index.jsp>
+            <image src=# alt=biglogo>
+        </a>
+    </div>
     <div class=login_box>
         <form name=loginfrm method=post>
             <table class=login_tbl>
