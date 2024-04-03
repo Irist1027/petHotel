@@ -19,32 +19,6 @@
             <div class="header-index"><a href="#"><span class="login">로그인</span> </a></div>
         </ul>
         </div>
-        <div class="header-subcontent">
-            <div class="subheader-box">
-                <div class=dumpheader></div>
-            </div>
-            <div class="subheader-box">
-                <div class=dumpheader>&nbsp</div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-            </div>
-            <div class="subheader-box">
-                <div class=dumpheader>&nbsp</div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-            </div>
-            <div class="subheader-box">
-                <div class=dumpheader>&nbsp</div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-                <div class=subheader><a href="#">subheader</a></div>
-            </div>
-        </div>
     </header>
     <div class="index-background">
         <div class="pic_arrow f_left"><</div>
@@ -59,18 +33,28 @@
                 <div class="index-content-topbox-text">
                 </div>
             </div>
-            cont
+            content1
         </div>
 
         <div class="index-content-box index-2nd">
-        content2
+            <div class="index-2nd-content">
+                <div class="index-2nd-content-text">
+                    content2
+                <div>
+            </div>
         </div>
 
+        
         <div class="index-content-box index-3rd">
-        content3
+            <div class="index-3rd-content">
+                <div class="index-3rd-content-text">
+                    content3
+                <div>
+            </div>
         </div>
     </div>
     <footer>
+        
     </footer>
 </body>
 </html>
