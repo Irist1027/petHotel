@@ -22,7 +22,7 @@ header{
 }
 
 .dis_hidden{
-    //display:none;
+    display:none;
 }
 
 .header_content, .header-subcontent{
@@ -131,6 +131,9 @@ header{
     vertical-align: middle;
 }
 
+.join-page{
+    background-color: rgba(231, 132, 240,0.2);
+}
 
 .join_title{
     width:90vw;

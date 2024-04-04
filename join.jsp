@@ -6,54 +6,60 @@
     <title>로그인</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
-<body>
+<body class=join-page>
     <div class=join_title>
         <a href=index.jsp>
             <image src=# alt=biglogo>
         </a>
     </div>
     <div class=join_box>
-        <form name=joinfrm method=post>
+        <form name=joinfrm method=post action=join2nd.jsp>
             <table class=join_tbl>
                 <tr>
-                    <td><label for="userId">아이디</label></td>
-                    <td colspan=2><input type=text name=userId id=userId></label></td>
+                    <td>
+                        <input type="checkbox" class=joinbox id=agree01><span>이용약관1</span>에 동의합니다
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="userPwd">비밀번호</label>
-                    <td colspan=2><input type=password name=userPwd id=userPwd></td>
+                    <td>
+                        <textarea readonly>이용약관1</textarea>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="userPwdChk">비밀번호 확인</label>
-                    <td colspan=2><input type=password name=userPwdChk id=userPwdChk></td>
+                    <td>
+                        <input type="checkbox" class=joinbox id=agree02><span>이용약관2</span>에 동의합니다
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="userName">이름</label>
-                    <td colspan=2><input type=text name=userName id=userName></td>
+                    <td>
+                        <textarea readonly>이용약관2</textarea>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="userTel">전화번호</label>
-                    <td colspan=2><input type=phone name=userTel id=userTel></td>
+                    <td>
+                        <input type=submit onclick=agreeChk() value="가입하기">
+                    </td>
                 </tr>
-                <tr>
-                    <td><label for="userStAddr">주소</label>
-                    <td><input type=text name=userStAddr id=userStAddr readonly></td>
-                    <td><button onclick="">주소 검색하기</button>
-                </tr>
-                <tr>
-                    <td><label for="userDetailAddr">세부 주소</label>
-                    <td colspan=2><input type=text name=userDetailAddr id=userDetailAddr></td>
-                </tr>
-                <tr class="dis_hidden">
-                    <td><label for="userAddr">전체주소</label>
-                    <td colspan=2><input type=text name=userAddr id=userAddr readonly></td>
-                </tr>
-                <tr>
-                    <td colspan=3><button>가입하기</button></td>
-                </tr>
-                
             </table>
         </form>
     </div>
+    <script>
+        const agree01Q = joinfrm.querySelector("#agree01");
+        const agree02Q = joinfrm.querySelector("#agree02");
+
+        function agreeChk(){
+            if(!(agree01Q.checked)){
+                alert("이용약관1에 체크해주세요");
+                agree01Q.focus();
+                return false;
+            }
+            if(!(agree02Q.checked)){
+                alert("이용약관2에 체크해주세요");
+                agree02Q.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
