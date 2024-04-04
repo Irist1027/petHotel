@@ -76,7 +76,7 @@
                     <td colspan=2><input type=text name=userAddr id=userAddr readonly></td>
                 </tr>
                 <tr>
-                    <td colspan=3><button>가입하기</button></td>
+                    <td colspan=3><input type=submit onclick='joinValidation("join")' value=가입하기></input></td>
                 </tr>
             </table>
         </form>
@@ -153,22 +153,45 @@
             userAddrQ.value=joinAddrString.toString();
         }
 
-        function joinValidation(){
-            if(joinFrm.userIdQ.value=="true"){
-                
-            }
-            if(joinEventPwd())
+        function joinValidation(mode){
 
+            if(mode=="join"){
+                if(joinFrm.userIdQ.value!="true"){
+                    console.log("ID 중복확인이 필요합니다");
+                    return false;
+                }
+
+                if(joinEventAddr){
+                    console.log("주소를 확인해주세요");
+                    userDetailAddrQ.focus;
+                    return false;
+                }
+            }
+           
+            if(joinEventPwd())
+                console.log("비밀번호를 확인해주세요");
+                userPwdQ.focus;
                 return false;
-            
+            if(userNameQ.value==""){
+                console.log("이름을 확인해주세요");
+                userNameQ.focus;
+                return false;
+            }
+            if(joinEventTel){
+                console.log("전화번호를 확인해주세요");
+                userTelDetailQ.focus;
+                return false;
+            }
+
+            return true;
         }
         
         userPwdQ.addEventListener("keyup",joinEventPwd);
         userPwdChkQ.addEventListener("keyup",joinEventPwdChk);
         userTelHeaderQ.addEventListener("onclick",joinEventTel);
         userTelDetailQ.addEventListener("keyup",joinEventTel);
-        userStAddr.addEventListener("keyup",joinEventAddr);
-        userDetailAddr.addEventListener("keyup",joinEventAddr);
+        userStAddrQ.addEventListener("keyup",joinEventAddr);
+        userDetailAddrQ.addEventListener("keyup",joinEventAddr);
     </script>
 </body>
 </html>
