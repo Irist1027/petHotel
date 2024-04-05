@@ -76,7 +76,7 @@
                     <td colspan=2><input type=text name=userAddr id=userAddr readonly></td>
                 </tr>
                 <tr>
-                    <td colspan=3><input type=submit onclick='joinValidation("join")' value=가입하기></input></td>
+                    <td colspan=3><input type=submit onclick='userFrmValidation("join")' value=가입하기></input></td>
                 </tr>
             </table>
         </form>
@@ -107,7 +107,7 @@
             if(pwdTemp.match(/[A-Z]/)){
                 pwdCnt++;
             }
-            if(pwdTemp.match(/[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/g)){
+            if(pwdTemp.match(/[!@#$%^&*]/g)){
                 pwdCnt++;
             }
 
@@ -153,7 +153,7 @@
             userAddrQ.value=joinAddrString.toString();
         }
 
-        function joinValidation(mode){
+        function userFrmValidation(mode){
 
             if(mode=="join"){
                 if(joinFrm.userIdQ.value!="true"){
